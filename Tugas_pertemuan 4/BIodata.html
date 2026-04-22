@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+</head>
+<body>
+    <h1>Biodata</h1>
+
+    <!-- Make Number -->
+    <div id="nim"></div>
+    <!-- Make String -->
+    <div id="nama"></div>
+    <!-- Make Number -->
+    <div id="usia"></div>
+    <!-- Make Array -->
+    <div id="hobby"></div>
+
+    <!-- Story Telling --> <br>
+    <div id="perkenalan"></div>
+
+    <script>
+        var nim = 15240381;
+        var nama = "Alexander Lusius Susanto";
+        var usia = 20;
+        var hobby = ["Membaca", "Bermain Game", "Bersepeda"];
+
+        document.getElementById("nim").innerHTML = "NIM: " + nim;
+        document.getElementById("nama").innerHTML = "Nama: " + nama;
+        document.getElementById("usia").innerHTML = "Usia: " + usia;
+        document.getElementById("hobby").innerHTML = "Hobi: " + hobby.join(", ");
+        document.getElementById("perkenalan").innerHTML = "Perkenalkan, nama saya " + nama + ". Saya berusia " + usia + " tahun. Hobi saya adalah " + hobby.join(", ") + ".";
+    </script>
+</body>
+</html>
