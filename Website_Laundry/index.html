@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OKE LAUNDRY HOUSE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+</head>
+<body>
+  <div class="page-shell">
+
+    <header class="site-header">
+      <div class="brand">
+        <i class="ti ti-wash"></i>
+        <span>OKE LAUNDRY HOUSE</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#layanan">Layanan</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#order">Order</a>
+      </nav>
+      <button class="btn-header" onclick="document.getElementById('overlay').classList.add('show')">
+        <i class="ti ti-brand-whatsapp"></i>
+        Hubungi WA
+      </button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero fade-up">
+      <div class="hero-copy">
+        <span class="eyebrow">Laundry rumahan terpercaya di Tambun Selatan, Bekasi</span>
+        <h1><span>OKE</span> Laundry House</h1>
+        <p>Kami memberikan layanan laundry rumahan yang bersih, wangi, dan terpercaya untuk warga Tambun Selatan dan sekitarnya. Antar jemput gratis tanpa minimum kg, proses transparan, tinggal hubungi kami via WhatsApp.</p>
+        <div class="hero-actions">
+          <a href="#layanan" class="btn-wa-solid">Lihat Layanan</a>
+          <a href="#order" class="btn-ghost">Order Online</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-box">
+          <i class="ti ti-shirt"></i>
+          <span>Bersih & Wangi</span>
+        </div>
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-bar fade-up">
+      <div class="stat-item">
+        <strong>100+</strong>
+        <span>Pelanggan Puas</span>
+      </div>
+      <div class="stat-item">
+        <strong>500+</strong>
+        <span>Kg Pakaian Dicuci</span>
+      </div>
+      <div class="stat-item">
+        <strong>24 Jam</strong>
+        <span>Proses Tercepat</span>
+      </div>
+      <div class="stat-item">
+        <strong>99%</strong>
+        <span>Kepuasan Pelanggan</span>
+      </div>
+    </section>
+
+    <main>
+      <!-- LAYANAN -->
+      <section class="section" id="layanan">
+        <div class="section-head fade-up">
+          <h2 class="sec-title">Layanan Kami</h2>
+          <p class="section-subtitle">Kami menyediakan berbagai layanan laundry dengan kualitas terbaik dan harga terjangkau.</p>
+        </div>
+        <div class="layanan-grid">
+
+          <div class="layanan-card fade-up" data-layanan="Cuci" data-harga="4000">
+            <i class="ti ti-shirt"></i>
+            <h3>Cuci</h3>
+            <p>Cuci bersih tanpa setrika, cocok untuk pakaian harian yang nggak perlu rapi banget.</p>
+            <ul>
+              <li><i class="ti ti-check"></i> Bersih dan wangi</li>
+              <li><i class="ti ti-check"></i> Tanpa setrika</li>
+              <li><i class="ti ti-check"></i> Selesai sesuai antrian</li>
+            </ul>
+            <div class="layanan-price">Mulai Rp 4.000<span>/kg</span></div>
+            <button class="btn-pilih-layanan" onclick="pilihLayanan(this)">
+              <i class="ti ti-calculator"></i> Hitung & Order
+            </button>
+          </div>
+
+          <div class="layanan-card fade-up" data-layanan="Cuci Setrika" data-harga="5000">
+            <i class="ti ti-steam"></i>
+            <h3>Cuci Setrika</h3>
+            <p>Paket lengkap cuci + setrika, wangi tahan lama dan siap pakai langsung.</p>
+            <ul>
+              <li><i class="ti ti-check"></i> Cuci + setrika</li>
+              <li><i class="ti ti-check"></i> Wangi parfum pilihan</li>
+              <li><i class="ti ti-check"></i> Selesai 1-2 hari</li>
+            </ul>
+            <div class="layanan-price">Mulai Rp 5.000<span>/kg</span></div>
+            <button class="btn-pilih-layanan" onclick="pilihLayanan(this)">
+              <i class="ti ti-calculator"></i> Hitung & Order
+            </button>
+          </div>
+
+          <div class="layanan-card fade-up" data-layanan="Setrika" data-harga="4000">
+            <i class="ti ti-ironing"></i>
+            <h3>Setrika</h3>
+            <p>Khusus setrika untuk pakaian yang sudah bersih tapi belum rapi, hasil licin dan wangi.</p>
+            <ul>
+              <li><i class="ti ti-check"></i> Tanpa proses cuci</li>
+              <li><i class="ti ti-check"></i> Setrika rapi</li>
+              <li><i class="ti ti-check"></i> Wangi parfum pilihan</li>
+            </ul>
+            <div class="layanan-price">Mulai Rp 4.000<span>/kg</span></div>
+            <button class="btn-pilih-layanan" onclick="pilihLayanan(this)">
+              <i class="ti ti-calculator"></i> Hitung & Order
+            </button>
+          </div>
+
+          <div class="layanan-card fade-up" data-layanan="Express" data-harga="8000">
+            <i class="ti ti-urgent"></i>
+            <h3>Express</h3>
+            <p>Butuh cepat? Layanan ekspres kami siap membantu kebutuhan mendesak.</p>
+            <ul>
+              <li><i class="ti ti-check"></i> Proses lebih cepat</li>
+              <li><i class="ti ti-check"></i> Prioritas pengerjaan</li>
+              <li><i class="ti ti-check"></i> Kualitas tetap terjamin</li>
+            </ul>
+            <div class="layanan-price">Mulai Rp 8.000<span>/kg</span></div>
+            <button class="btn-pilih-layanan" onclick="pilihLayanan(this)">
+              <i class="ti ti-calculator"></i> Hitung & Order
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FITUR -->
+      <section class="section section-gray" id="fitur">
+        <div class="section-head fade-up">
+          <h2 class="sec-title">Fitur Unggulan</h2>
+          <p class="section-subtitle">Kami memberikan pengalaman terbaik dengan berbagai fitur modern.</p>
+        </div>
+        <div class="fitur-grid">
+          <div class="fitur-card fade-up">
+            <i class="ti ti-car"></i>
+            <h3>Antar Jemput Gratis</h3>
+            <p>Kami jemput dan antar laundry langsung ke lokasi. Gratis untuk semua jumlah pesanan di area terdekat, tanpa minimum kg.</p>
+          </div>
+          <div class="fitur-card fade-up">
+            <i class="ti ti-clock-24"></i>
+            <h3>Order Online 24/7</h3>
+            <p>Pesan layanan laundry kapan saja melalui website kami, tersedia 24 jam sehari, 7 hari seminggu.</p>
+          </div>
+          <div class="fitur-card fade-up">
+            <i class="ti ti-map-pin-search"></i>
+            <h3>Estimasi Harga Otomatis</h3>
+            <p>Hitung perkiraan biaya laundry secara instan langsung dari pilihan layanan dan berat pakaian.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONI -->
+      <section class="section" id="testimoni">
+        <div class="section-head fade-up">
+          <h2 class="sec-title">Testimoni Pelanggan</h2>
+          <p class="section-subtitle">Apa kata mereka tentang layanan kami.</p>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card fade-up">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Laundry paling bersih dan wangi! Antar jemput tepat waktu banget."</p>
+            <div class="testi-person">
+              <div class="testi-avatar">SR</div>
+              <div>
+                <span class="testi-name">Siti Rahma</span>
+                <span class="testi-role">Karyawan Swasta</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card fade-up">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Layanan express-nya nyelamatin hidup pas mau acara penting!"</p>
+            <div class="testi-person">
+              <div class="testi-avatar">BS</div>
+              <div>
+                <span class="testi-name">Budi Santoso</span>
+                <span class="testi-role">Wiraswasta</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card fade-up">
+            <div class="testi-stars">★★★★★</div>
+            <p>Laundry cepat dan tetap wangi, plus ada antar-jemput gratis tanpa minimum kg. Pemiliknya ramah dan sering kasih bonus, mulai dari tukar kupon sampai promo hari Jumat. Karena konsepnya rumahan, kalau lagi butuh cepat juga bisa langsung datang, tinggal hubungi dulu lewat WhatsApp.</p>
+            <div class="testi-person">
+              <div class="testi-avatar">GM</div>
+              <div>
+                <span class="testi-name">Pelanggan</span>
+                <span class="testi-role">Ulasan Google Maps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOKASI & GALERI -->
+      <section class="section section-gray" id="lokasi">
+        <div class="section-head fade-up">
+          <h2 class="sec-title">Lokasi Kami</h2>
+          <p class="section-subtitle">Kunjungi langsung outlet kami atau cek lokasi via Google Maps.</p>
+        </div>
+
+        <div class="lokasi-wrap fade-up">
+          <div class="lokasi-info">
+            <h3><i class="ti ti-map-pin"></i> OKE LAUNDRY HOUSE</h3>
+            <p><i class="ti ti-building"></i> Graha Prima Baru Blok M20 No. 5, Mangunjaya, Kec. Tambun Selatan, Kab. Bekasi, Jawa Barat 17510</p>
+            <p><i class="ti ti-phone"></i> +62 813-8987-329</p>
+            <p><i class="ti ti-clock"></i> Buka setiap hari — hubungi dulu via WhatsApp untuk konfirmasi jam</p>
+            <p><i class="ti ti-star-filled"></i> Rating 5.0 di Google Maps</p>
+            <a href="https://maps.google.com/?cid=3112642767354352512" target="_blank" class="btn-maps">
+              <i class="ti ti-map-2"></i> Buka di Google Maps
+            </a>
+          </div>
+          <div class="lokasi-map">
+            <iframe src="https://maps.google.com/maps?q=-6.2287112,107.0591953&z=16&output=embed" width="100%" height="320" style="border:0; border-radius:24px;" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="galeri-grid fade-up">
+          <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMkc1iK0qeVRpIO2uLPBzTvqqyG7Tsc-OWEDJgOJHw1unGQx55PLdnoOVtxjgigxlGL6m3IFIi1epeHuNvHr9PqEgUgpzmdzUF77dL1aSzEBO39rbrhaugRgLN2gaSjQQL9rHX1QGSUCVEK9ny7iZAJ_Q=s800-w800-h600" alt="Foto OKE LAUNDRY HOUSE 1" />
+          <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZP8g3sBL4KzUthchHj97g5NldX4YGgmau16ex8Rfoa2Y_RxVF2dMIV2kBwgh4oJQ0MSLMjTtc7hlPJ2bP9ywKd618Zo9nlBDGLP8Kc04QEckODQhjthnOZuFYjvCayg8oC0N9rD2ttXWoMgZmEgDEbY=s800-w800-h600" alt="Foto OKE LAUNDRY HOUSE 2" />
+          <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNNm80hERR-uRws5hTqEAs2m_Cw6GMzpyL02-eRCaxVJdjEIBzGe_PFgICGCPAMJYbAasBWhIHlt_1vBrGd16RZ7OlOKpud4zZ13Z1ISkYr1FDdHLGWeo-WDt7uLF5JOpehdpqR_w-LyA0lve4PW2Rz=s800-w800-h600" alt="Foto OKE LAUNDRY HOUSE 3" />
+          <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZP0dc2qxH-RVMHkEx7Ym0qg92ccJYHxN0v7fWPGU-lgqwxdZGO9OiQXdKQclNj55MsIc5aSfBq6zZsLBvIRZQEIjlsWx8oxzH5T_xJF-mu7a8deeDO-9Ujyip6SvdhmmgUjTHi0vasYcXtmNc_AYKCP4Q=s800-w800-h600" alt="Foto OKE LAUNDRY HOUSE 4" />
+          <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNg-JhVi_SLTe9xpDd6-KV_UZF0smOagYrssXHUEEv-UaZ-6PezwsmZijXdW6XP3InNfGOsnuvzGBJgJH1mg6CZ4DiY7YWwoWVDZkIvuSKijLdZHSv7FN3VMGqq_OkOaVnJ8K-8WnUU8N5zPfyq3Dp6yA=s800-w800-h600" alt="Foto OKE LAUNDRY HOUSE 5" />
+        </div>
+      </section>
+
+      <!-- FORM ORDER + KALKULATOR + PEMBAYARAN -->
+      <section class="section" id="order">
+        <div class="section-head fade-up">
+          <h2 class="sec-title">Formulir Order Laundry</h2>
+          <p class="section-subtitle">Pilih layanan di atas, lalu isi form berikut. Estimasi harga dan pembayaran otomatis terhitung di sini.</p>
+        </div>
+
+        <div class="order-wrap fade-up">
+
+          <!-- Form kiri -->
+          <div class="order-form-card">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" id="f-nama" placeholder="Masukkan nama kamu" />
+            </div>
+            <div class="form-group">
+              <label>Nomor HP</label>
+              <input type="text" id="f-hp" placeholder="08xxxxxxxxxx" />
+            </div>
+            <div class="form-group">
+              <label>Jenis Layanan</label>
+              <select id="f-layanan" onchange="updateLayananManual()">
+                <option value="">-- Pilih Layanan --</option>
+                <option data-harga="4000">Cuci</option>
+                <option data-harga="5000">Cuci Setrika</option>
+                <option data-harga="4000">Setrika</option>
+                <option data-harga="8000">Express</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Berat (kg)</label>
+              <input type="number" id="f-jumlah" min="1" value="1" oninput="hitungEstimasi()" />
+            </div>
+
+            <div class="form-group">
+              <label>Catatan Tambahan</label>
+              <textarea id="f-catatan" placeholder="Misal: ada pakaian putih, minta pewangi tertentu, dll"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Metode Pembayaran</label>
+              <div class="payment-options">
+                <button type="button" class="pay-btn active" data-metode="QRIS" onclick="pilihMetode(this)">
+                  <i class="ti ti-qrcode"></i> QRIS
+                </button>
+                <button type="button" class="pay-btn" data-metode="DANA" onclick="pilihMetode(this)">
+                  <i class="ti ti-wallet"></i> DANA
+                </button>
+                <button type="button" class="pay-btn" data-metode="SeaBank" onclick="pilihMetode(this)">
+                  <i class="ti ti-building-bank"></i> SeaBank
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estimasi & pembayaran kanan -->
+          <div class="order-summary-card">
+            <h3>Estimasi Biaya</h3>
+            <div class="summary-row">
+              <span>Layanan</span>
+              <span id="sum-layanan">Belum dipilih</span>
+            </div>
+            <div class="summary-row">
+              <span>Jumlah</span>
+              <span id="sum-jumlah">1 kg</span>
+            </div>
+            <div class="summary-row">
+              <span>Harga satuan</span>
+              <span id="sum-harga-satuan">Rp 0</span>
+            </div>
+            <div class="summary-total">
+              <span>Total Estimasi</span>
+              <span id="sum-total">Rp 0</span>
+            </div>
+
+            <div class="payment-info" id="payment-info">
+              <div class="payment-info-head">
+                <i class="ti ti-qrcode"></i>
+                <span>Bayar via <strong id="pay-method-label">QRIS</strong></span>
+              </div>
+              <p id="pay-detail">Scan QRIS pada saat pakaian diantar/diambil oleh kurir kami, atau tunjukkan QRIS di outlet.</p>
+            </div>
+
+            <button class="btn-order" onclick="orderViaForm()">
+              <i class="ti ti-brand-whatsapp"></i> Kirim Order via WhatsApp
+            </button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><i class="ti ti-map-pin"></i> Graha Prima Baru Blok M20 No. 5, Mangunjaya, Tambun Selatan, Bekasi &nbsp;|&nbsp; <i class="ti ti-clock"></i> Buka setiap hari, hubungi via WhatsApp</p>
+      <p>© 2025 OKE LAUNDRY HOUSE. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <div class="wa-float">
+    <button onclick="document.getElementById('overlay').classList.add('show')" aria-label="Hubungi via WhatsApp">
+      <i class="ti ti-brand-whatsapp"></i>
+    </button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal fade-up">
+      <div class="modal-header">
+        <h3><i class="ti ti-brand-whatsapp" style="color:#25D366"></i> Hubungi OKE LAUNDRY HOUSE</h3>
+        <button onclick="document.getElementById('overlay').classList.remove('show')" aria-label="Tutup">
+          <i class="ti ti-x"></i>
+        </button>
+      </div>
+      <p>Isi form berikut dan kami akan segera membalas pesananmu!</p>
+      <input type="text" id="m-nama" placeholder="Nama kamu" />
+      <select id="m-layanan">
+        <option value="">-- Pilih Layanan --</option>
+        <option>Cuci</option>
+        <option>Cuci Setrika</option>
+        <option>Setrika</option>
+        <option>Express</option>
+      </select>
+      <button class="btn-send-wa" onclick="sendWA()">
+        <i class="ti ti-send"></i> Chat WhatsApp Sekarang
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
